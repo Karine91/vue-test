@@ -1,0 +1,63 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__bottom {
+  display: flex;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 220px;
+
+  &__link {
+    display: block;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+.search {
+  &__form {
+    display: flex;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    fill: #626262;
+  }
+
+  &__input {
+    border: 1px solid #d5d5d5;
+    box-shadow: inset 0 0 5px rgba(#000, 0.16);
+    padding: 6px 11px 6px 30px;
+    margin-right: 7px;
+    width: 312px;
+    border-radius: 2px;
+  }
+
+  &__btn {
+    background: $blue;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background ease 0.3s;
+
+    &:hover {
+      background: lighten($blue, 10);
+    }
+  }
+}

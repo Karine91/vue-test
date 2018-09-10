@@ -1,0 +1,39 @@
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__item {
+    background: linear-gradient(to right, #92c8e1, #b2daed);
+    padding: 20px 25px;
+    border-radius: 2px 2px 0 0;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-transform: uppercase;
+    color: #4b4b4b;
+    font-size: 16px;
+    font-family: "PFBeauSansPro-Light", sans-serif;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #92c8e1;
+
+    &--active {
+      border: 1px solid #cbcecf;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    fill: #484848;
+  }
+}
