@@ -1,0 +1,95 @@
+.goods__header {
+  background: #d9e8ef;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods {
+  &__selected-count {
+    font-size: 18px;
+    font-family: "PFBeauSansPro-Book", sans-serif;
+  }
+
+  &__delete-btn {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-family: "PFBeauSansPro-Book", sans-serif;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__delele-wrapper {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    background: #7f7f7f;
+    border-radius: 2px;
+    margin-right: 7px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__delete-icon {
+    fill: #d9e8ef;
+    height: 100%;
+    width: 14px;
+  }
+}
+
+.table {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price-results {
+  border: none;
+  margin-top: 15px;
+
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #626262;
+  }
+
+  &__value {
+    width: 10%;
+    text-align: right;
+    font-family: "PFBeauSansPro-Book", sans-serif;
+    color: #252525;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  &__currency {
+    font-size: 13px;
+  }
+}
+
+.total {
+  background-image: url("~images/dotted-x.png");
+  background-repeat: repeat-x;
+  background-position: top left;
+  color: #0a7eb5;
+  text-align: right;
+  padding-top: 20px;
+
+  &__txt {
+    text-transform: uppercase;
+  }
+
+  &__value,
+  &__currency {
+    font-family: "PFBeauSansPro-Book", sans-serif;
+    font-weight: 800;
+  }
+
+  &__value {
+    font-size: 24px;
+  }
+}

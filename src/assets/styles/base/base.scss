@@ -1,6 +1,16 @@
+@import "variables";
+
 @font-face {
   font-family: "PFBeauSansPro-Black";
   src: url("../fonts/PFBeauSansPro-Black.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PFBeauSansPro-Book";
+  src: url("../fonts/PFBeauSansPro-Book.ttf") format("truetype");
 
   font-weight: normal;
   font-style: normal;
@@ -14,6 +24,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "PFBeauSansPro-SeBold";
+  src: url("../fonts/PFBeauSansPro-SeBold.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,4 +39,34 @@
 body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+}
+
+.page-content {
+  margin-top: 50px;
+}
+
+.page-title {
+  color: #0a7eb5;
+  font-family: $headingFont;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.input {
+  box-shadow: inset 0 0 5px rgba(#000, 0.12);
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }

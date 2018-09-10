@@ -1,0 +1,32 @@
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  &__link {
+    color: #333333;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__item {
+    display: inline-flex;
+  }
+
+  &__item:not(:last-child) {
+    &:after {
+      content: "/";
+      margin: 0 5px;
+    }
+  }
+
+  &__item:last-child .breadcrumbs__link {
+    text-decoration: none;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+}

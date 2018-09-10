@@ -1,0 +1,25 @@
+{
+  "goods": [
+    {
+      "id": "1",
+      "image": "/uploads/knife.jpg",
+      "description": "Нож складной WENGER Evolution ,\"Автобус\" ,13 функций, 85 мм.WENGER",
+      "price": "990",
+      "amount": "1"
+    },
+    {
+      "id": "2",
+      "image": "/uploads/bag.png",
+      "description": "Рюкзак WENGER «NEO»",
+      "price": "5500",
+      "amount": "1"
+    },
+    {
+      "id": "3",
+      "image": "/uploads/pen.jpg",
+      "description": "Перьевая ручка Waterman Hemisphere Essential, перо: нержавеющая сталь. WATERMAN",
+      "price": "23750",
+      "amount": "1"
+    }
+  ]
+}

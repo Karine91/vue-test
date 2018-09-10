@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 module.exports = {
   entry: {
-    entry: "./src/main.js",
+    entry: ["babel-polyfill", "./src/main.js"],
     styles: "./src/assets/styles/index.js"
   },
   output: {
@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["vue-style-loader", "css-loader", "sass-loader"]
+        use: ["vue-style-loader", "css-loader", "postcss-loader", "sass-loader"]
       },
       {
         test: /\.vue$/,
@@ -32,8 +32,8 @@ module.exports = {
             scss: [
               "vue-style-loader",
               "css-loader",
+              "postcss-loader",
               "sass-loader",
-              ,
               {
                 loader: "sass-resources-loader",
                 options: {
