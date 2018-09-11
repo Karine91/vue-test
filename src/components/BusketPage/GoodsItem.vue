@@ -12,7 +12,7 @@
                 .col.price__per-one {{data.price | currency}}
                 .col.text-center x
                 .col.text-center
-                    .price__amount.input(@click="showAmountModal") {{data.amount}}
+                    .price__amount.input(@click.stop="showAmountModal") {{data.amount}}
                 .col.text-center =
                 .col.text-right.price__result {{priceResult | currency}}
                 modal-change(
